@@ -36,10 +36,22 @@ section p {
     text-align: center;
 }
 
+section .campo {
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    padding: 3px 8px;
+}
+.campo input{
+    border: none;
+    font-size: 12pt;
+    vertical-align: 1vw;
+}
+
 /* -- Buttons e linkss -- */
 
 /* -- Butão de autenticação com google -- */
-section > div > a {
+section #btn1 {
     display: block;
     margin-top: 10px;
     border: 1px solid black;
@@ -48,6 +60,7 @@ section > div > a {
     color: black;
     padding: 5px 60px;
     font-size: 14pt;
+    text-align: center;
 }
 
 /* -- Esqueci Palavra passe -- */
@@ -60,7 +73,7 @@ section #forgot {
 }
 
 /* -- Butão de submit -- */
-form button[type=submit]{
+section button[type=submit]{
     display: block;
     margin: auto;
     padding: 5px 30px;
@@ -74,7 +87,7 @@ form button[type=submit]{
 }
 
 /* -- Butão de Sign up -- */
-form div:last-child > a{
+section #btn2{
     display: block;
     text-decoration: none;
     color: black;
