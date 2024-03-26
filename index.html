@@ -3,29 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login/styles/login.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>LOGIN</h1>
-    <a href="">
-        <img src="login/image/google (1).png" alt="">
-        Google
-    </a>
-    <p>ou</p>
-    <form action="login.php" method="post">
+    <section>
         <div>
-            <img src="login/image/person_black_24dp.svg" alt="" srcset="">
-            <input type="email" name="" id="email" placeholder="E-mail" autocomplete="email" required maxlength="40">
-            <label for="email">E-mail</label>
+            <h1>Entre com </h1>
+            <a href="">
+                <img src="login/image/google.png" alt="">
+                Google
+            </a>
+            <p>ou</p>
         </div>
-        <div>
-            <img src="login/image/lock_black_24dp.svg" alt="">
-            <input type="password" name="" id="password" placeholder="Palavra-passe" autocomplete="current-password" required minlength="8" maxlength="20">
-            <label for="password">Palavra-passe</label>
-        </div>
-        <a href="">Esqueci da palavra-passe</a>
-        <button type="submit">Log in</button>
-        <a href="">Sign up</a>
-    </form> 
+        <form action="login.php" method="post">
+            <div>
+                <div>
+                    <img src="login/image/person_black_24dp.svg" alt="" srcset="">
+                    <input type="email" name="" id="email" placeholder="E-mail" autocomplete="email" required maxlength="40">
+                    <label for="email">E-mail</label>
+                </div>
+                <div>
+                    <img src="login/image/lock_black_24dp.svg" alt="">
+                    <input type="password" name="" id="password" placeholder="Palavra-passe" autocomplete="current-password" required minlength="8" maxlength="20">
+                    <label for="password">Palavra-passe</label>
+                    <a href="" id="forgot">Esqueci da palavra-passe</a>
+                </div>
+            </div>
+            <div>
+                <button type="submit">Log in</button>
+                <a href="">Sign up</a>
+            </div>
+        </form>
+    </section>
 </body>
 </html>
