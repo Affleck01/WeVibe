@@ -27,42 +27,59 @@ form {
     flex-direction: column;
     justify-content: space-around;
 }
-#forgot{
-    display: block;
-}
 
- body > a {
-    text-decoration: none;
-    border: 1px solid black;
-    color: black;
-    border-radius: 30px;
-    padding: 3px 25px;
-    font-size: 16pt;
+section h1 {
     text-align: center;
-    width: 30%;
 }
 
+section p {
+    text-align: center;
+}
+
+/* -- Buttons e linkss -- */
+
+/* -- Butão de autenticação com google -- */
+section > div > a {
+    display: block;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    padding: 5px 60px;
+    font-size: 14pt;
+}
+
+/* -- Esqueci Palavra passe -- */
+section #forgot {
+    display: block;
+    color: red;
+    border-radius: 30px;
+    font-size: 10pt;
+    text-align: right;
+}
+
+/* -- Butão de submit -- */
 form button[type=submit]{
     display: block;
-    padding: 3px 25px;
-}
-
-button[type=submit]{
+    margin: auto;
+    padding: 5px 30px;
     text-decoration: none;
     border: none;
     width: 220px;
     color: white;
     background-color: rgb(1, 1, 90);
     border-radius: 30px;
-    padding: 3px 45px;
-    font-size: 16pt;
+    font-size: 14pt;
 }
-form a:last-child{
+
+/* -- Butão de Sign up -- */
+form div:last-child > a{
+    display: block;
     text-decoration: none;
     color: black;
     border-radius: 30px;
-    padding: 3px 25px;
     font-size: 14pt;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 8px;
 }
