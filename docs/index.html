@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>WeVibe</title>
 </head>
 <body>
@@ -13,11 +13,47 @@
     <main>
         <h1>WeVibe</h1>
         <h3>Regista-te para veres os <span>eventos</span><br> que podes participar com teus <br> <span>amigos.</span></h3>
-        <a href="../pages/login/login.html">Faça Login</a>
+        <a href="#" onclick="openform()">Faça Login</a>
         <p>Não tens uma conta? <a href="../Pages/login/signup.html">Inscrever-se</a></p>
-        
     </main>
-    
+    <section id="formulario" style="display: none;">
+        <form id="loginForm" action="login.php" method="post">
+          <div>
+              <h1>Entre com </h1>
+              <a href="#" id="btn1">
+                  <img src="login/image/google.png" alt="">
+                  Google
+              </a>
+          </div>
+          <p>ou</p>
+          <div>
+              <div class="campo">
+                  <label for="email">
+                      <img src="login/image/person_black_24dp.svg" alt="" srcset="">
+                  </label>
+                  <input type="email" name="" id="email" placeholder="E-mail" autocomplete="email" required maxlength="40">
+              </div>
+              <div class="campo">
+                  <label for="password">
+                      <img src="login/image/lock_black_24dp.svg" alt="">
+                  </label>
+                  <input type="password" name="" id="password" placeholder="Palavra-passe" autocomplete="current-password" required minlength="8" maxlength="20">
+              </div>
+              <a href="" id="forgot">Esqueci palavra-passe</a>
+              <button type="submit"><a href="../eventos/index.html"></a>login</button>
+          </div>
+      </form>
+  </section>
+
+    <script>
+        function openform() {
+            var formulario = document.getElementById("formulario");
+            if (formulario.style.display == 'none'){
+                formulario.style.display = 'flex';
+            } else {
+                formulario.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
-

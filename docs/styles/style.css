@@ -1,0 +1,143 @@
+:root{
+    --cor0:#1d76b5;
+    --cor1:#D3DAFF;
+    --cor2:#5665AE;
+
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+    margin-top: 40%;
+}
+h3{
+    margin-top: 20%;
+    text-align: center;
+    font-size: 17pt;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+span{
+    color: var(--cor2);
+}
+main > a{
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 13px 15px;
+    border-radius: 25px;
+    background-color: var(--cor0);
+    width: 70%;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+p{
+    text-align: center;
+    font-size: 10pt;
+}
+p>a{
+    color: #3649a7;
+}
+
+
+
+
+section {
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    height: 90vh;
+    max-width: 640px;
+    position: absolute;
+    background-color: white;
+    width: 90%;
+    top: 0;
+}
+
+form {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section h1 {
+    text-align: center;
+}
+
+section p {
+    text-align: center;
+}
+
+section .campo {
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    padding: 3px 8px;
+}
+.campo input{
+    border: none;
+    font-size: 12pt;
+    vertical-align: 1vw;
+}
+
+/* -- Buttons e linkss -- */
+
+/* -- Butão de autenticação com google -- */
+section #btn1 {
+    display: block;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    padding: 5px 60px;
+    font-size: 14pt;
+    text-align: center;
+}
+
+/* -- Esqueci Palavra passe -- */
+section #forgot {
+    display: block;
+    color: red;
+    border-radius: 30px;
+    font-size: 10pt;
+    text-align: right;
+}
+
+/* -- Butão de submit -- */
+section button[type=submit]{
+    display: block;
+    margin: auto;
+    padding: 5px 30px;
+    text-decoration: none;
+    border: none;
+    width: 220px;
+    color: white;
+    background-color: rgb(1, 1, 90);
+    border-radius: 30px;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+/* -- Butão de Sign up -- */
+section #btn2{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    font-size: 14pt;
+    text-align: center;
+    margin-top: 8px;
+}
