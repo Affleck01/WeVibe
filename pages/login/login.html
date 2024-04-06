@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login/styles/login.css">
+    <link rel="stylesheet" href="styles/login.css">
     <title>Document</title>
 </head>
 <body>
     <section>
-        <form action="login.php" method="post">
+          <form id="loginForm" action="login.php" method="post">
             <div>
                 <h1>Entre com </h1>
                 <a href="" id="btn1">
@@ -31,12 +31,22 @@
                     <input type="password" name="" id="password" placeholder="Palavra-passe" autocomplete="current-password" required minlength="8" maxlength="20">
                 </div>
                 <a href="" id="forgot">Esqueci palavra-passe</a>
+                <a href="../eventos/index.html">login</a>
             </div>
         </form>
         <div>
-            <button type="submit">Log in</button>
-            <a href="" id="btn2">Sign up</a>
         </div>
     </section>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+          // Impede o envio do formulário padrão
+          event.preventDefault();
+          
+          // Redireciona para a página principal
+          window.location.href = "index.html";
+        });
+      </script>
+      
 </body>
 </html>

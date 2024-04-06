@@ -84,6 +84,7 @@ section button[type=submit]{
     background-color: rgb(1, 1, 90);
     border-radius: 30px;
     font-size: 14pt;
+    cursor: pointer;
 }
 
 /* -- Butão de Sign up -- */
