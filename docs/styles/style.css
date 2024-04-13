@@ -4,7 +4,6 @@
     --cor2:#5665AE;
 
 }
-
 html{
     overflow: hidden;
 }
@@ -55,7 +54,7 @@ p>a{
 section {
     margin: auto;
     padding: 20px;
-    display: flex;
+    display: none;
     flex-direction: column;
     vertical-align: middle;
     justify-content: space-around;
@@ -63,10 +62,9 @@ section {
     align-items: center;
     align-content: center;
     height: 90vh;
-    width: 100%;
+    width: 90%;
     position: absolute;
     background-color: white;
-    width: 90%;
     top: 0;
 }
 
@@ -153,3 +151,34 @@ section #btn2{
     font-weight: 500;
 }
 
+@media screen and (min-width: 718px) {
+    body{
+        display: flex;
+        justify-content: space-around;
+    }
+    aside{
+        display: block;
+        margin: auto;
+    }
+    aside>img{
+        margin-top: 40%;
+    }
+    main{
+        display: none;
+    }
+    section{
+        display: block;
+        position: relative;
+        width: 25%;
+        border: 1px solid black;
+        min-width: 300px ;
+        height: 80vh;
+    }
+    section button[type=submit]{
+        width: 85%;
+    }
+    section #btn2{
+        width: 55%;
+    }
+
+}
