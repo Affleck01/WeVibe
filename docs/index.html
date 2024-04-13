@@ -8,7 +8,7 @@
 </head>
 <body>
     <aside>
-
+        <img src="image/Design sem nome (1).png" alt="">
     </aside>
     <main>
         <h1>WeVibe</h1>
@@ -18,30 +18,34 @@
     </main>
     <section id="formulario" style="display: none;">
         <form id="loginForm" action="login.php" method="post">
-          <div>
-              <h1>Entre com </h1>
-              <a href="#" id="btn1">
-                  <img src="login/image/google.png" alt="">
-                  Google
-              </a>
+            
+            <div>
+                <h1>Entre com </h1>
+                <a href="#" id="btn1">
+                    <img src="../pages/login/image/google(2).png" alt="">
+                    Google
+                </a>
+                <p>ou</p>
+                <div class="campo">
+                    <label for="email">
+                        <img src="../pages/login/image/person_black_24dp.svg" alt="" srcset="">
+                    </label>
+                    <input type="email" name="" id="email" placeholder="E-mail" autocomplete="email" required maxlength="40">
+                </div>
+                <div class="campo">
+                    <label for="password">
+                        <img src="../pages/login/image/lock_black_24dp.svg" alt="">
+                    </label>
+                    <input type="password" name="" id="password" placeholder="Palavra-passe" autocomplete="current-password" required minlength="8" maxlength="20">
+                </div>
+                <a href="" id="forgot">Esqueci palavra-passe</a>
           </div>
-          <p>ou</p>
           <div>
-              <div class="campo">
-                  <label for="email">
-                      <img src="login/image/person_black_24dp.svg" alt="" srcset="">
-                  </label>
-                  <input type="email" name="" id="email" placeholder="E-mail" autocomplete="email" required maxlength="40">
-              </div>
-              <div class="campo">
-                  <label for="password">
-                      <img src="login/image/lock_black_24dp.svg" alt="">
-                  </label>
-                  <input type="password" name="" id="password" placeholder="Palavra-passe" autocomplete="current-password" required minlength="8" maxlength="20">
-              </div>
-              <a href="" id="forgot">Esqueci palavra-passe</a>
-              <button type="submit"><a href="../eventos/index.html"></a>login</button>
-          </div>
+            <button type="submit">
+                <a href="../eventos/index.html"></a>login
+            </button>
+            <a id="btn2" href="../pages/login/signup.html">Sign up</a>
+        </div>
       </form>
   </section>
 

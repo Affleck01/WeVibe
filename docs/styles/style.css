@@ -5,11 +5,18 @@
 
 }
 
+html{
+    overflow: hidden;
+}
+
+aside{
+    display: none;
+}
 main{
     width: 100%;
     height: 100vh;
 }
-h1{
+main h1{
     text-align: center;
     margin-top: 40%;
 }
@@ -45,8 +52,6 @@ p>a{
 }
 
 
-
-
 section {
     margin: auto;
     padding: 20px;
@@ -58,7 +63,7 @@ section {
     align-items: center;
     align-content: center;
     height: 90vh;
-    max-width: 640px;
+    width: 100%;
     position: absolute;
     background-color: white;
     width: 90%;
@@ -66,7 +71,7 @@ section {
 }
 
 form {
-    height: 40vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -74,6 +79,7 @@ form {
 
 section h1 {
     text-align: center;
+    margin-top: 10%;
 }
 
 section p {
@@ -114,16 +120,17 @@ section #forgot {
     border-radius: 30px;
     font-size: 10pt;
     text-align: right;
+    text-decoration: none;
 }
 
 /* -- Butão de submit -- */
 section button[type=submit]{
     display: block;
     margin: auto;
-    padding: 5px 30px;
+    padding: 5px;
     text-decoration: none;
     border: none;
-    width: 220px;
+    width: 60vw;
     color: white;
     background-color: rgb(1, 1, 90);
     border-radius: 30px;
@@ -136,8 +143,13 @@ section #btn2{
     display: block;
     text-decoration: none;
     color: black;
-    border-radius: 30px;
     font-size: 14pt;
     text-align: center;
+    margin: auto;
     margin-top: 8px;
+    padding: 5px;
+    width: 55vw;
+    text-align: center;
+    font-weight: 500;
 }
+
