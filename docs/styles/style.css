@@ -1,3 +1,5 @@
+/* -- Variaveis e configurações inicias -- */
+
 :root{
     --cor0:#1d76b5;
     --cor1:#D3DAFF;
@@ -8,25 +10,24 @@ html{
     overflow: hidden;
 }
 
-aside{
-    display: none;
-}
+/* -- main -- */
+
 main{
     width: 100%;
     height: 100vh;
 }
-main h1{
+main>h1{
     text-align: center;
     margin-top: 40%;
 }
-h3{
+main>h3{
     margin-top: 20%;
     text-align: center;
     font-size: 17pt;
     font-family: sans-serif;
     font-weight: 400;
 }
-span{
+main>span{
     color: var(--cor2);
 }
 main > a{
@@ -42,14 +43,16 @@ main > a{
     font-family: sans-serif;
     font-weight: 600;
 }
-p{
+main>p{
     text-align: center;
     font-size: 10pt;
 }
-p>a{
+main p>a{
     color: #3649a7;
+    text-decoration: none;
 }
 
+/* -- Secção de Formulario -- */
 
 section {
     margin: auto;
@@ -58,15 +61,19 @@ section {
     flex-direction: column;
     vertical-align: middle;
     justify-content: space-around;
-    flex-wrap: nowrap;
     align-items: center;
     align-content: center;
     height: 90vh;
-    width: 90%;
+    width: 85%;
     position: absolute;
     background-color: white;
     top: 0;
 }
+section>img{
+    display: none;
+}
+
+/* -- Formulario -- */
 
 form {
     height: 70vh;
@@ -74,41 +81,41 @@ form {
     flex-direction: column;
     justify-content: space-around;
 }
-
-section h1 {
+form h1 {
     text-align: center;
     margin-top: 10%;
 }
 
-section p {
+/* -- Butão de autenticação com google -- */
+section #btn1 {
+    display: block;
+    border: 1px solid var(--cor2);
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 12pt;
+    text-align: center;
+    padding: 5px 20px;
+    color: black;
+    width: 90%;
+}
+form p {
     text-align: center;
 }
 
-section .campo {
+/* -- Formulario Imputs -- */
+form .campo {
     border: 1px solid black;
     border-radius: 30px;
     margin-bottom: 10px;
     padding: 3px 8px;
 }
+
 .campo input{
     border: none;
     font-size: 12pt;
-    vertical-align: 1vw;
-}
-
-/* -- Buttons e linkss -- */
-
-/* -- Butão de autenticação com google -- */
-section #btn1 {
-    display: block;
-    margin-top: 10px;
-    border: 1px solid black;
-    border-radius: 30px;
-    text-decoration: none;
-    color: black;
-    padding: 5px 60px;
-    font-size: 14pt;
-    text-align: center;
+    vertical-align: 40%;
+    width: 80%;
+    outline: none;
 }
 
 /* -- Esqueci Palavra passe -- */
@@ -128,7 +135,7 @@ section button[type=submit]{
     padding: 5px;
     text-decoration: none;
     border: none;
-    width: 60vw;
+    width: 90%;
     color: white;
     background-color: rgb(1, 1, 90);
     border-radius: 30px;
@@ -146,39 +153,31 @@ section #btn2{
     margin: auto;
     margin-top: 8px;
     padding: 5px;
-    width: 55vw;
     text-align: center;
     font-weight: 500;
 }
 
 @media screen and (min-width: 718px) {
-    body{
-        display: flex;
-        justify-content: space-around;
-    }
-    aside{
-        display: block;
-        margin: auto;
-    }
-    aside>img{
-        margin-top: 40%;
-    }
     main{
         display: none;
     }
     section{
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         position: relative;
+        width: 100%;
+        height: 90vh;
+    }
+    section>img{
+        display: block;
+        height: 70%;
+        margin-right: 10%;
+    }
+    form{
         width: 25%;
-        border: 1px solid black;
-        min-width: 300px ;
-        height: 80vh;
-    }
-    section button[type=submit]{
-        width: 85%;
-    }
-    section #btn2{
-        width: 55%;
+        border: 1px solid gray;
+        padding: 0px 25px;
     }
 
 }

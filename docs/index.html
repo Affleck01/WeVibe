@@ -7,34 +7,35 @@
     <title>WeVibe</title>
 </head>
 <body>
-    <aside>
-        <img src="image/Design sem nome (1).png" alt="">
-    </aside>
+
     <main>
         <h1>WeVibe</h1>
-        <h3>Regista-te para veres os <span>eventos</span><br> que podes participar com teus <br> <span>amigos.</span></h3>
+        <h3>
+            Regista-te para veres os <span>eventos</span><br> que podes participar com teus <br> <span>amigos.</span>
+        </h3>
         <a href="#" onclick="openform()">Faça Login</a>
-        <p>Não tens uma conta? <a href="../Pages/login/signup.html">Inscrever-se</a></p>
+        <p>Não tens uma conta? <a href="signup.html">Inscrever-se</a></p>
     </main>
+
     <section id="formulario">
+        <img src="images/phones.png" alt="Mockups">
         <form id="loginForm" action="login.php" method="post">
-            
+            <h1>WeVibe</h1>
             <div>
-                <h1>Entre com </h1>
                 <a href="#" id="btn1">
-                    <img src="../pages/login/image/google(2).png" alt="">
-                    Google
+                    <img src="images/google_pequena.png" alt="">
+                    Contuinar com Google 
                 </a>
                 <p>ou</p>
                 <div class="campo">
                     <label for="email">
-                        <img src="../pages/login/image/person_black_24dp.svg" alt="" srcset="">
+                        <img src="images/person_black_24dp.svg" alt="" srcset="">
                     </label>
                     <input type="email" name="" id="email" placeholder="E-mail" autocomplete="email" required maxlength="40">
                 </div>
                 <div class="campo">
                     <label for="password">
-                        <img src="../pages/login/image/lock_black_24dp.svg" alt="">
+                        <img src="images/lock_black_24dp.svg" alt="">
                     </label>
                     <input type="password" name="" id="password" placeholder="Palavra-passe" autocomplete="current-password" required minlength="8" maxlength="20">
                 </div>
@@ -42,9 +43,11 @@
           </div>
           <div>
             <button type="submit">
-                <a href="../eventos/index.html"></a>login
+                <a href="../eventos/index.html"></a>Iniciar Sessão
             </button>
-            <a id="btn2" href="../pages/login/signup.html">Sign up</a>
+            <p>
+                <a id="btn2" href="signup.html">Registar-se</a>
+            </p>
         </div>
       </form>
   </section>
@@ -52,10 +55,8 @@
     <script>
         function openform() {
             var formulario = document.getElementById("formulario");
-            if (formulario.style.display == 'none'){
+            if (formulario.style.display = 'none'){
                 formulario.style.display = 'flex';
-            } else {
-                formulario.style.display = 'none';
             }
         }
     </script>
