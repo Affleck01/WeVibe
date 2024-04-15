@@ -1,59 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/login.css">
-    <title>Document</title>
-</head>
-<body>
-    <section>
-          <form id="loginForm" action="login.php" method="post">
-            <div>
-                <h1>Entre com </h1>
-                <a href="" id="btn1">
-                    <img src="login/image/google.png" alt="">
-                    Google
-                </a>
-            </div>
-            <p>ou</p>
-            <div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/signup.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1>WeVibe</h1>
+                <p>
+                    Criar uma nova conta
+                </p>
+                <form id="loginForm" action="login.php" method="post">
+                    <a href="">
+                        <img src="images/google_pequena.png" alt="">
+                        Contuinar com o Google
+                    </a> 
+    
+                    <div>
+                        <p>ou</p>
+                    </div>
+                    <div class="campo">
+                        <input type="email" name="" id="email" placeholder="E-mail" autocomplete="email" required maxlength="40" required>
+                    </div>
+            
+                    <div class="campo">
+                        <input type="text" name="" placeholder="Nome" required>
+                    </div>
+                    <div class="campo">
+                        <input type="text" placeholder="Apelido" required>
+                    </div class="campo">
+            
+                    <div class="campo">
+                        <input type="password" name="" id="password" placeholder="Palavra-passe" autocomplete="current-password" required minlength="8" maxlength="20" required>
+                    </div>
+                    <div class="campo">
+                        <input type="password" name="" id="password" placeholder="Confirmar Palavra-passe" autocomplete="current-password" required minlength="8" maxlength="20" required>
+                    </div>
+                    <p>Ja tens uma conta?<a href="index.html">Entrar</a></p>
+                    
+                </form>
                 <div>
-                    <label for="">nome</label>
-                    <input type="text">
+                    <button type="submit">Registar-se</button>
                 </div>
-                <div>
-                    <label for="">Apelido</label>
-                    <input type="text">
-                </div>
-                <div class="campo">
-                    <label for="email">
-                        <img src="login/image/person_black_24dp.svg" alt="" srcset="">
-                    </label>
-                    <input type="email" name="" id="email" placeholder="E-mail" autocomplete="email" required maxlength="40">
-                </div>
-                <div class="campo">
-                    <label for="password">
-                        <img src="login/image/lock_black_24dp.svg" alt="">
-                    </label>
-                    <input type="password" name="" id="password" placeholder="Palavra-passe" autocomplete="current-password" required minlength="8" maxlength="20">
-                </div>
-                <button type="submit"><a href="../eventos/index.html"></a>login</button>
-            </div>
-        </form>
-        <div>
-        </div>
-    </section>
-
-    <script>
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
-          // Impede o envio do formulário padrão
-          event.preventDefault();
-          
-          // Redireciona para a página principal
-          window.location.href = "index.html";
-        });
-      </script>
-      
-</body>
+            </section>
+            
+        </main>
+    </body>
 </html>

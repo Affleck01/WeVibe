@@ -7,69 +7,68 @@ body{
     padding: 15px;
 }
 
-section {
+main{
     margin: auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    vertical-align: middle;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    height: 90vh;
-    max-width: 640px;
+    height: 100vh;
 }
-
-form {
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+section{
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 80vh;
 }
-
 section h1 {
     text-align: center;
+}
+section p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 10pt;
+    margin-top: 5px;
+}
+
+form{
+    padding: 20px;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.616);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+/* -- Butão de autenticação com google -- */
+form>a {
+    display: block;
+    margin-top: 8px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-weight: 550;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12pt;
+    text-align: center;
+    background-color: rgba(104, 104, 255, 0.897);
 }
 
 section p {
     text-align: center;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
-
 section .campo {
-    border: 1px solid black;
-    border-radius: 30px;
-    margin-bottom: 10px;
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 8px;
+    margin-bottom: 8px;
     padding: 3px 8px;
 }
 .campo input{
     border: none;
     font-size: 12pt;
     vertical-align: 1vw;
-}
-
-/* -- Buttons e linkss -- */
-
-/* -- Butão de autenticação com google -- */
-section #btn1 {
-    display: block;
-    margin-top: 10px;
-    border: 1px solid black;
-    border-radius: 30px;
-    text-decoration: none;
-    color: black;
-    padding: 5px 60px;
-    font-size: 14pt;
-    text-align: center;
-}
-
-/* -- Esqueci Palavra passe -- */
-section #forgot {
-    display: block;
-    color: red;
-    border-radius: 30px;
-    font-size: 10pt;
-    text-align: right;
+    outline: none;
 }
 
 /* -- Butão de submit -- */
@@ -79,21 +78,12 @@ section button[type=submit]{
     padding: 5px 30px;
     text-decoration: none;
     border: none;
-    width: 220px;
+    width: 100%;
     color: white;
-    background-color: rgb(1, 1, 90);
-    border-radius: 30px;
+    background-color:  rgba(104, 104, 255, 0.897);
+    border-radius: 8px;
     font-size: 14pt;
     cursor: pointer;
-}
-
-/* -- Butão de Sign up -- */
-section #btn2{
-    display: block;
-    text-decoration: none;
-    color: black;
-    border-radius: 30px;
-    font-size: 14pt;
-    text-align: center;
-    margin-top: 8px;
+    box-shadow: 0px 1px 3px 1px rgb(105, 105, 105);
+    margin-top: 10px;
 }
