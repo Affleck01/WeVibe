@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="422067395569-lif0hp0o47f69i8rjbospbsp7rndl5n7.apps.googleusercontent.com">
     <link rel="stylesheet" href="styles/style.css">
     <title>Wevibe</title>
 </head>
@@ -17,7 +18,8 @@
         </form>
         <img src="images/notifications_icon.svg" alt="">
     </header>
-    <main>
+    <main>`
+        <a href="#" onclick="signOut();">Sign out</a>
         <h1>Eventos</h1>
         <section>
             <h3>Eventos Sugeridos</h3>
@@ -163,5 +165,14 @@
         <p>adicionar evento</p>
     </footer>
     
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
+    function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+        console.log('User signed out.');
+        });
+    }
+</script>
 </body>
 </html>
