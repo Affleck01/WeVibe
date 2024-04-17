@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <meta name="google-signin-client_id" content="422067395569-lif0hp0o47f69i8rjbospbsp7rndl5n7.apps.googleusercontent.com">
     <title>WeVibe</title>
 </head>
 <body>
@@ -26,6 +27,7 @@
                     <img src="images/google_pequena.png" alt="">
                     Contuinar com Google 
                 </a>
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
                 <p>ou</p>
                 <div class="campo">
                     <label for="email">
@@ -53,14 +55,7 @@
       </form>
   </section>
 
-    <script>
-        // window.alert('Site ainda em desenhvolvimento, saber mais com Affleck')
-        function openform() {
-            var formulario = document.getElementById("formulario");
-            if (formulario.style.display = 'none'){
-                formulario.style.display = 'flex';
-            }
-        }
-    </script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="index.js"></script>
 </body>
 </html>
